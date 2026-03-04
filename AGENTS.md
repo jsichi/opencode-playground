@@ -18,3 +18,4 @@ This is a simple python project.
 - Always activate venv for virtual environment before running python or pip
 - Maintain all dependencies in requirements.txt
 - Use `sudo` whenever administrative privileges are required
+- Always use `$GITHUB_TOKEN` environment variable for GitHub authentication in scripts and CI environments
