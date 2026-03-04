@@ -4,7 +4,7 @@ This is a simple python project.
 
 ## Collaboration
 
-- Never change files directly.  Instead, submit github pull requests.
+- Always make changes to a branch.  After pushing, github pull requests should be submitted against the main repository (jsichi/opencode-playground).
 
 ## Dependencies
 - Use python 3.12.13
