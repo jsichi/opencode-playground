@@ -17,3 +17,4 @@ This is a simple python project.
 - Use python 3.12.13
 - Always activate venv for virtual environment before running python or pip
 - Maintain all dependencies in requirements.txt
+- Use `sudo` whenever administrative privileges are required
