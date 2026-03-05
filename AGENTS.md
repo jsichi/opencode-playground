@@ -20,8 +20,18 @@ After working on your branch, push it to your fork and submit a PR against the u
 ### Creating a Pull Request
 To submit a PR from your fork's branch to upstream **jsichi/opencode-playground** (not your fork):
 ```bash
-gh pr create --repo jsichi/opencode-playground --head jellyfishshot:feature-branch --base main --title "Feature title" --body "Description here"
-```
+github_branch="feature-branch"
+gh pr create \
+  --repo jsichi/opencode-playground \
+  --head jellyfishshot:$github_branch \
+  --base main \
+  --title "Feature title" \
+  -F - <<'EOF'
+## Summary
+
+- Describe your changes here
+- Special chars like $var are safe in code blocks
+EOF
 
 ### Syncing after Merge
 **Do not push directly to the repository. Always work through PRs.**
