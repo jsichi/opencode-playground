@@ -18,7 +18,7 @@ After working on your branch, push it to your fork and submit a PR against the u
 - To check status: `git status`, view changes: `git diff`, stage files: `git add .`, commit: `git commit -m "message"`
 
 ### Creating a Pull Request
-To submit a PR from your fork's branch to upstream main:
+To submit a PR from your fork's branch to upstream **jsichi/opencode-playground** (not your fork):
 ```bash
 gh pr create --repo jsichi/opencode-playground --head jellyfishshot:feature-branch --base main --title "Feature title" --body "Description here"
 ```
