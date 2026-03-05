@@ -27,7 +27,7 @@ def test_small_numbers():
     print("Test passed: test_small_numbers()")
 
 def test_larger_number():
-    assert count_primes(100) == 99  # Breaking the test intentionally
+    assert count_primes(100) == 25
     print("Test passed: test_larger_number()")
 
 def test_verified_with_sympy():
