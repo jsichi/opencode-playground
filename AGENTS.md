@@ -24,9 +24,19 @@ gh pr create --repo jsichi/opencode-playground --head jellyfishshot:feature-bran
 ```
 
 ### Syncing after Merge
-After your PR is merged, sync back to keep remotes up to date:
-- Remote sync: `git remote add jsichi https://github.com/jsichi/opencode-playground.git` (if not already added) then `git fetch jsichi && git merge jsichi/main --no-commit --no-ff` or use `gh repo sync -b main`
-- Local sync: `git checkout main && git pull upstream/main`
+**Do not push directly to the repository. Always work through PRs.**
+
+After your PR is merged, sync locally:
+1. First, update the jellyfishshot fork on GitHub from jsichi:
+   ```bash
+   gh repo sync jellyfishshot/opencode-playground --source jsichi/opencode-playground --branch main
+   ```
+2. Then pull down the changes:
+   ```bash
+   git fetch all
+   git checkout main
+   git pull origin main
+   ```
 
 ## Dependencies
 - Use python 3.12.13
